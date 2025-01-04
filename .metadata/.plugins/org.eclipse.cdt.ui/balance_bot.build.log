@@ -1,0 +1,10 @@
+16:26:06 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-size  balance_bot.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1184	      4	   1572	   2760	    ac8	balance_bot.elf
+Finished building: default.size.stdout
+ 
+
+16:26:06 Build Finished. 0 errors, 0 warnings. (took 135ms)
+

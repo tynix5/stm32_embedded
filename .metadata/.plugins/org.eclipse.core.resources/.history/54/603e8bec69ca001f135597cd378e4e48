@@ -1,0 +1,53 @@
+/* USER CODE BEGIN Header */
+/**
+  ******************************************************************************
+  * @file           : main.c
+  * @brief          : Main program body
+  ******************************************************************************
+  * @attention
+  *
+  * Copyright (c) 2025 STMicroelectronics.
+  * All rights reserved.
+  *
+  * This software is licensed under terms that can be found in the LICENSE file
+  * in the root directory of this software component.
+  * If no LICENSE file comes with this software, it is provided AS-IS.
+  *
+  ******************************************************************************
+  */
+
+#include "main.h"
+
+
+void clock_config();
+void led_config();
+void toggle_led();
+
+int main(void) {
+
+	clock_config();
+	led_config();
+
+	while (1) {
+
+		toggle_led();
+	}
+
+	return 0;
+}
+
+
+void clock_config() {
+
+	RCC->AHB1ENR |= (1 << 0);		// enable GPOIA
+}
+
+void led_config() {
+
+
+}
+
+void toggle_led() {
+
+
+}
