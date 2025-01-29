@@ -3940,3 +3940,381 @@ Finished building: default.size.stdout
  
 Finished building: balance_bot.list
  
+23:15:42 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "balance_bot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tynix\Development\stm32_workspace\balance_bot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="balance_bot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: balance_bot.elf
+ 
+arm-none-eabi-size  balance_bot.elf 
+arm-none-eabi-objdump -h -S balance_bot.elf  > "balance_bot.list"
+   text	   data	    bss	    dec	    hex	filename
+   5628	      4	   1572	   7204	   1c24	balance_bot.elf
+Finished building: default.size.stdout
+ 
+Finished building: balance_bot.list
+ 
+23:16:12 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "balance_bot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tynix\Development\stm32_workspace\balance_bot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="balance_bot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: balance_bot.elf
+ 
+arm-none-eabi-size  balance_bot.elf 
+arm-none-eabi-objdump -h -S balance_bot.elf  > "balance_bot.list"
+   text	   data	    bss	    dec	    hex	filename
+   5628	      4	   1572	   7204	   1c24	balance_bot.elf
+Finished building: default.size.stdout
+ 
+Finished building: balance_bot.list
+ 
+23:16:48 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "balance_bot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tynix\Development\stm32_workspace\balance_bot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="balance_bot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: balance_bot.elf
+ 
+arm-none-eabi-size  balance_bot.elf 
+arm-none-eabi-objdump -h -S balance_bot.elf  > "balance_bot.list"
+   text	   data	    bss	    dec	    hex	filename
+   5628	      4	   1572	   7204	   1c24	balance_bot.elf
+Finished building: default.size.stdout
+ 
+Finished building: balance_bot.list
+ 
+23:18:28 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "balance_bot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tynix\Development\stm32_workspace\balance_bot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="balance_bot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: balance_bot.elf
+ 
+arm-none-eabi-size  balance_bot.elf 
+arm-none-eabi-objdump -h -S balance_bot.elf  > "balance_bot.list"
+   text	   data	    bss	    dec	    hex	filename
+   5672	      4	   1572	   7248	   1c50	balance_bot.elf
+Finished building: default.size.stdout
+ 
+Finished building: balance_bot.list
+ 
+23:18:51 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "balance_bot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tynix\Development\stm32_workspace\balance_bot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="balance_bot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: balance_bot.elf
+ 
+arm-none-eabi-size  balance_bot.elf 
+arm-none-eabi-objdump -h -S balance_bot.elf  > "balance_bot.list"
+   text	   data	    bss	    dec	    hex	filename
+   5668	      4	   1572	   7244	   1c4c	balance_bot.elf
+Finished building: default.size.stdout
+ 
+Finished building: balance_bot.list
+ 
+23:21:18 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "balance_bot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tynix\Development\stm32_workspace\balance_bot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="balance_bot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: balance_bot.elf
+ 
+arm-none-eabi-size  balance_bot.elf 
+arm-none-eabi-objdump -h -S balance_bot.elf  > "balance_bot.list"
+   text	   data	    bss	    dec	    hex	filename
+   5764	      4	   1572	   7340	   1cac	balance_bot.elf
+Finished building: default.size.stdout
+ 
+Finished building: balance_bot.list
+ 
+23:22:18 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "balance_bot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tynix\Development\stm32_workspace\balance_bot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="balance_bot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: balance_bot.elf
+ 
+arm-none-eabi-size  balance_bot.elf 
+arm-none-eabi-objdump -h -S balance_bot.elf  > "balance_bot.list"
+   text	   data	    bss	    dec	    hex	filename
+   5772	      4	   1572	   7348	   1cb4	balance_bot.elf
+Finished building: default.size.stdout
+ 
+Finished building: balance_bot.list
+ 
+23:22:54 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "balance_bot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tynix\Development\stm32_workspace\balance_bot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="balance_bot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: balance_bot.elf
+ 
+arm-none-eabi-size  balance_bot.elf 
+arm-none-eabi-objdump -h -S balance_bot.elf  > "balance_bot.list"
+   text	   data	    bss	    dec	    hex	filename
+   5772	      4	   1572	   7348	   1cb4	balance_bot.elf
+Finished building: default.size.stdout
+ 
+Finished building: balance_bot.list
+ 
+23:23:41 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "balance_bot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tynix\Development\stm32_workspace\balance_bot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="balance_bot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: balance_bot.elf
+ 
+arm-none-eabi-size  balance_bot.elf 
+arm-none-eabi-objdump -h -S balance_bot.elf  > "balance_bot.list"
+   text	   data	    bss	    dec	    hex	filename
+   5776	      4	   1572	   7352	   1cb8	balance_bot.elf
+Finished building: default.size.stdout
+ 
+Finished building: balance_bot.list
+ 
+23:25:14 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "balance_bot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tynix\Development\stm32_workspace\balance_bot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="balance_bot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: balance_bot.elf
+ 
+arm-none-eabi-size  balance_bot.elf 
+arm-none-eabi-objdump -h -S balance_bot.elf  > "balance_bot.list"
+   text	   data	    bss	    dec	    hex	filename
+   5780	      4	   1572	   7356	   1cbc	balance_bot.elf
+Finished building: default.size.stdout
+ 
+Finished building: balance_bot.list
+ 
+23:25:56 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "balance_bot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tynix\Development\stm32_workspace\balance_bot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="balance_bot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: balance_bot.elf
+ 
+arm-none-eabi-size  balance_bot.elf 
+arm-none-eabi-objdump -h -S balance_bot.elf  > "balance_bot.list"
+   text	   data	    bss	    dec	    hex	filename
+   5780	      4	   1572	   7356	   1cbc	balance_bot.elf
+Finished building: default.size.stdout
+ 
+Finished building: balance_bot.list
+ 
+23:26:52 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "balance_bot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tynix\Development\stm32_workspace\balance_bot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="balance_bot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: balance_bot.elf
+ 
+arm-none-eabi-size  balance_bot.elf 
+arm-none-eabi-objdump -h -S balance_bot.elf  > "balance_bot.list"
+   text	   data	    bss	    dec	    hex	filename
+   5776	      4	   1572	   7352	   1cb8	balance_bot.elf
+Finished building: default.size.stdout
+ 
+Finished building: balance_bot.list
+ 
+23:27:56 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "balance_bot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tynix\Development\stm32_workspace\balance_bot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="balance_bot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: balance_bot.elf
+ 
+arm-none-eabi-size  balance_bot.elf 
+arm-none-eabi-objdump -h -S balance_bot.elf  > "balance_bot.list"
+   text	   data	    bss	    dec	    hex	filename
+   5780	      4	   1572	   7356	   1cbc	balance_bot.elf
+Finished building: default.size.stdout
+ 
+Finished building: balance_bot.list
+ 
+23:29:28 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "balance_bot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tynix\Development\stm32_workspace\balance_bot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="balance_bot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: balance_bot.elf
+ 
+arm-none-eabi-size  balance_bot.elf 
+arm-none-eabi-objdump -h -S balance_bot.elf  > "balance_bot.list"
+   text	   data	    bss	    dec	    hex	filename
+   5780	      4	   1572	   7356	   1cbc	balance_bot.elf
+Finished building: default.size.stdout
+ 
+Finished building: balance_bot.list
+ 
+23:30:55 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "balance_bot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tynix\Development\stm32_workspace\balance_bot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="balance_bot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: balance_bot.elf
+ 
+arm-none-eabi-size  balance_bot.elf 
+arm-none-eabi-objdump -h -S balance_bot.elf  > "balance_bot.list"
+   text	   data	    bss	    dec	    hex	filename
+   5772	      4	   1572	   7348	   1cb4	balance_bot.elf
+Finished building: default.size.stdout
+ 
+Finished building: balance_bot.list
+ 
+23:31:47 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "balance_bot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tynix\Development\stm32_workspace\balance_bot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="balance_bot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: balance_bot.elf
+ 
+arm-none-eabi-size  balance_bot.elf 
+arm-none-eabi-objdump -h -S balance_bot.elf  > "balance_bot.list"
+   text	   data	    bss	    dec	    hex	filename
+   5772	      4	   1572	   7348	   1cb4	balance_bot.elf
+Finished building: default.size.stdout
+ 
+Finished building: balance_bot.list
+ 
+23:32:26 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "balance_bot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tynix\Development\stm32_workspace\balance_bot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="balance_bot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: balance_bot.elf
+ 
+arm-none-eabi-size  balance_bot.elf 
+arm-none-eabi-objdump -h -S balance_bot.elf  > "balance_bot.list"
+   text	   data	    bss	    dec	    hex	filename
+   5772	      4	   1572	   7348	   1cb4	balance_bot.elf
+Finished building: default.size.stdout
+ 
+Finished building: balance_bot.list
+ 
+23:33:41 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "balance_bot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tynix\Development\stm32_workspace\balance_bot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="balance_bot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: balance_bot.elf
+ 
+arm-none-eabi-size  balance_bot.elf 
+arm-none-eabi-objdump -h -S balance_bot.elf  > "balance_bot.list"
+   text	   data	    bss	    dec	    hex	filename
+   5776	      4	   1572	   7352	   1cb8	balance_bot.elf
+Finished building: default.size.stdout
+ 
+Finished building: balance_bot.list
+ 
+23:35:05 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "balance_bot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tynix\Development\stm32_workspace\balance_bot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="balance_bot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: balance_bot.elf
+ 
+arm-none-eabi-size  balance_bot.elf 
+arm-none-eabi-objdump -h -S balance_bot.elf  > "balance_bot.list"
+   text	   data	    bss	    dec	    hex	filename
+   5776	      4	   1572	   7352	   1cb8	balance_bot.elf
+Finished building: default.size.stdout
+ 
+Finished building: balance_bot.list
+ 
+23:35:31 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "balance_bot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tynix\Development\stm32_workspace\balance_bot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="balance_bot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: balance_bot.elf
+ 
+arm-none-eabi-size  balance_bot.elf 
+arm-none-eabi-objdump -h -S balance_bot.elf  > "balance_bot.list"
+   text	   data	    bss	    dec	    hex	filename
+   5776	      4	   1572	   7352	   1cb8	balance_bot.elf
+Finished building: default.size.stdout
+ 
+Finished building: balance_bot.list
+ 
+23:36:31 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "balance_bot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tynix\Development\stm32_workspace\balance_bot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="balance_bot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: balance_bot.elf
+ 
+arm-none-eabi-size  balance_bot.elf 
+arm-none-eabi-objdump -h -S balance_bot.elf  > "balance_bot.list"
+   text	   data	    bss	    dec	    hex	filename
+   5776	      4	   1572	   7352	   1cb8	balance_bot.elf
+Finished building: default.size.stdout
+ 
+Finished building: balance_bot.list
+ 
+23:37:12 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "balance_bot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tynix\Development\stm32_workspace\balance_bot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="balance_bot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: balance_bot.elf
+ 
+arm-none-eabi-size  balance_bot.elf 
+arm-none-eabi-objdump -h -S balance_bot.elf  > "balance_bot.list"
+   text	   data	    bss	    dec	    hex	filename
+   5776	      4	   1572	   7352	   1cb8	balance_bot.elf
+Finished building: default.size.stdout
+ 
+Finished building: balance_bot.list
+ 
+23:38:29 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "balance_bot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tynix\Development\stm32_workspace\balance_bot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="balance_bot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: balance_bot.elf
+ 
+arm-none-eabi-size  balance_bot.elf 
+arm-none-eabi-objdump -h -S balance_bot.elf  > "balance_bot.list"
+   text	   data	    bss	    dec	    hex	filename
+   5780	      4	   1572	   7356	   1cbc	balance_bot.elf
+Finished building: default.size.stdout
+ 
+Finished building: balance_bot.list
+ 
+23:39:15 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "balance_bot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tynix\Development\stm32_workspace\balance_bot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="balance_bot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: balance_bot.elf
+ 
+arm-none-eabi-size  balance_bot.elf 
+arm-none-eabi-objdump -h -S balance_bot.elf  > "balance_bot.list"
+   text	   data	    bss	    dec	    hex	filename
+   5780	      4	   1572	   7356	   1cbc	balance_bot.elf
+Finished building: default.size.stdout
+ 
+Finished building: balance_bot.list
+ 
+23:40:01 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "balance_bot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tynix\Development\stm32_workspace\balance_bot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="balance_bot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: balance_bot.elf
+ 
+arm-none-eabi-size  balance_bot.elf 
+arm-none-eabi-objdump -h -S balance_bot.elf  > "balance_bot.list"
+   text	   data	    bss	    dec	    hex	filename
+   5780	      4	   1572	   7356	   1cbc	balance_bot.elf
+Finished building: default.size.stdout
+ 
+Finished building: balance_bot.list
+ 
+23:42:18 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "balance_bot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tynix\Development\stm32_workspace\balance_bot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="balance_bot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: balance_bot.elf
+ 
+arm-none-eabi-size  balance_bot.elf 
+arm-none-eabi-objdump -h -S balance_bot.elf  > "balance_bot.list"
+   text	   data	    bss	    dec	    hex	filename
+   5780	      4	   1572	   7356	   1cbc	balance_bot.elf
+Finished building: default.size.stdout
+ 
+Finished building: balance_bot.list
+ 
+23:43:07 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "balance_bot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tynix\Development\stm32_workspace\balance_bot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="balance_bot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: balance_bot.elf
+ 
+arm-none-eabi-size  balance_bot.elf 
+arm-none-eabi-objdump -h -S balance_bot.elf  > "balance_bot.list"
+   text	   data	    bss	    dec	    hex	filename
+   5780	      4	   1572	   7356	   1cbc	balance_bot.elf
+Finished building: default.size.stdout
+ 
+Finished building: balance_bot.list
+ 
