@@ -8112,3 +8112,386 @@ Finished building: default.size.stdout
  
 Finished building: balance_bot.list
  
+00:21:00 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "balance_bot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tynix\Development\stm32_workspace\balance_bot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="balance_bot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: balance_bot.elf
+ 
+arm-none-eabi-size  balance_bot.elf 
+arm-none-eabi-objdump -h -S balance_bot.elf  > "balance_bot.list"
+   text	   data	    bss	    dec	    hex	filename
+  10328	    104	   1880	  12312	   3018	balance_bot.elf
+Finished building: default.size.stdout
+ 
+Finished building: balance_bot.list
+ 
+00:24:05 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:157:19: warning: variable 'motor_dir' set but not used [-Wunused-but-set-variable]
+  157 |           uint8_t motor_dir;
+      |                   ^~~~~~~~~
+../Core/Src/main.c:155:20: warning: unused variable 'right_pwm_val' [-Wunused-variable]
+  155 |           uint32_t right_pwm_val = (uint32_t) (rightmotor_min_pwm + ( ((float)(rightmotor_max_pwm - rightmotor_min_pwm)) / (max_in - 0)) * (sq_controller - 0));
+      |                    ^~~~~~~~~~~~~
+../Core/Src/main.c:154:20: warning: unused variable 'left_pwm_val' [-Wunused-variable]
+  154 |           uint32_t left_pwm_val = (uint32_t) (leftmotor_min_pwm + ( ((float)(leftmotor_max_pwm - leftmotor_min_pwm)) / (max_in - 0)) * (sq_controller - 0));
+      |                    ^~~~~~~~~~~~
+arm-none-eabi-gcc -o "balance_bot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tynix\Development\stm32_workspace\balance_bot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="balance_bot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: balance_bot.elf
+ 
+arm-none-eabi-size  balance_bot.elf 
+arm-none-eabi-objdump -h -S balance_bot.elf  > "balance_bot.list"
+   text	   data	    bss	    dec	    hex	filename
+  10136	    104	   1880	  12120	   2f58	balance_bot.elf
+Finished building: default.size.stdout
+ 
+Finished building: balance_bot.list
+ 
+00:25:35 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:152:19: warning: variable 'motor_dir' set but not used [-Wunused-but-set-variable]
+  152 |           uint8_t motor_dir;
+      |                   ^~~~~~~~~
+../Core/Src/main.c:150:20: warning: unused variable 'right_pwm_val' [-Wunused-variable]
+  150 |           uint32_t right_pwm_val = (uint32_t) (rightmotor_min_pwm + ( ((float)(rightmotor_max_pwm - rightmotor_min_pwm)) / (max_controller_out - 0)) * (controller_abs - 0));
+      |                    ^~~~~~~~~~~~~
+../Core/Src/main.c:149:20: warning: unused variable 'left_pwm_val' [-Wunused-variable]
+  149 |           uint32_t left_pwm_val = (uint32_t) (leftmotor_min_pwm + ( ((float)(leftmotor_max_pwm - leftmotor_min_pwm)) / (max_controller_out - 0)) * (controller_abs - 0));
+      |                    ^~~~~~~~~~~~
+arm-none-eabi-gcc -o "balance_bot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tynix\Development\stm32_workspace\balance_bot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="balance_bot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: balance_bot.elf
+ 
+arm-none-eabi-size  balance_bot.elf 
+arm-none-eabi-objdump -h -S balance_bot.elf  > "balance_bot.list"
+   text	   data	    bss	    dec	    hex	filename
+   5888	      4	   1572	   7464	   1d28	balance_bot.elf
+Finished building: default.size.stdout
+ 
+Finished building: balance_bot.list
+ 
+00:26:13 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:167:19: error: 'timer' undeclared (first use in this function)
+  167 |                   timer++;// wait for next fusion data
+      |                   ^~~~~
+../Core/Src/main.c:167:19: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:95:15: warning: unused variable 'last_err' [-Wunused-variable]
+   95 |         float last_err = 0;
+      |               ^~~~~~~~
+../Core/Src/main.c:93:21: warning: unused variable 'pitch_setpoint' [-Wunused-variable]
+   93 |         const float pitch_setpoint = 0;
+      |                     ^~~~~~~~~~~~~~
+../Core/Src/main.c:90:21: warning: unused variable 'max_controller_out' [-Wunused-variable]
+   90 |         const float max_controller_out = 10;
+      |                     ^~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:89:21: warning: unused variable 'max_error' [-Wunused-variable]
+   89 |         const float max_error = 30;
+      |                     ^~~~~~~~~
+../Core/Src/main.c:87:15: warning: unused variable 'multiplier' [-Wunused-variable]
+   87 |         float multiplier = 1.0;
+      |               ^~~~~~~~~~
+../Core/Src/main.c:86:21: warning: unused variable 'kd' [-Wunused-variable]
+   86 |         const float kd = 1.0;
+      |                     ^~
+../Core/Src/main.c:85:21: warning: unused variable 'kp' [-Wunused-variable]
+   85 |         const float kp = 1.21;
+      |                     ^~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+00:26:23 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:95:15: warning: unused variable 'last_err' [-Wunused-variable]
+   95 |         float last_err = 0;
+      |               ^~~~~~~~
+../Core/Src/main.c:93:21: warning: unused variable 'pitch_setpoint' [-Wunused-variable]
+   93 |         const float pitch_setpoint = 0;
+      |                     ^~~~~~~~~~~~~~
+../Core/Src/main.c:90:21: warning: unused variable 'max_controller_out' [-Wunused-variable]
+   90 |         const float max_controller_out = 10;
+      |                     ^~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:89:21: warning: unused variable 'max_error' [-Wunused-variable]
+   89 |         const float max_error = 30;
+      |                     ^~~~~~~~~
+../Core/Src/main.c:87:15: warning: unused variable 'multiplier' [-Wunused-variable]
+   87 |         float multiplier = 1.0;
+      |               ^~~~~~~~~~
+../Core/Src/main.c:86:21: warning: unused variable 'kd' [-Wunused-variable]
+   86 |         const float kd = 1.0;
+      |                     ^~
+../Core/Src/main.c:85:21: warning: unused variable 'kp' [-Wunused-variable]
+   85 |         const float kp = 1.21;
+      |                     ^~
+arm-none-eabi-gcc -o "balance_bot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tynix\Development\stm32_workspace\balance_bot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="balance_bot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: balance_bot.elf
+ 
+arm-none-eabi-size  balance_bot.elf 
+arm-none-eabi-objdump -h -S balance_bot.elf  > "balance_bot.list"
+   text	   data	    bss	    dec	    hex	filename
+   2712	      4	   1572	   4288	   10c0	balance_bot.elf
+Finished building: default.size.stdout
+ 
+Finished building: balance_bot.list
+ 
+00:33:38 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:152:19: warning: variable 'motor_dir' set but not used [-Wunused-but-set-variable]
+  152 |           uint8_t motor_dir;
+      |                   ^~~~~~~~~
+../Core/Src/main.c:150:20: warning: unused variable 'right_pwm_val' [-Wunused-variable]
+  150 |           uint32_t right_pwm_val = (uint32_t) (rightmotor_min_pwm + ( ((float)(rightmotor_max_pwm - rightmotor_min_pwm)) / (max_controller_out - 0)) * (controller_abs - 0));
+      |                    ^~~~~~~~~~~~~
+../Core/Src/main.c:149:20: warning: unused variable 'left_pwm_val' [-Wunused-variable]
+  149 |           uint32_t left_pwm_val = (uint32_t) (leftmotor_min_pwm + ( ((float)(leftmotor_max_pwm - leftmotor_min_pwm)) / (max_controller_out - 0)) * (controller_abs - 0));
+      |                    ^~~~~~~~~~~~
+arm-none-eabi-gcc -o "balance_bot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tynix\Development\stm32_workspace\balance_bot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="balance_bot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: balance_bot.elf
+ 
+arm-none-eabi-size  balance_bot.elf 
+arm-none-eabi-objdump -h -S balance_bot.elf  > "balance_bot.list"
+   text	   data	    bss	    dec	    hex	filename
+   5888	      4	   1572	   7464	   1d28	balance_bot.elf
+Finished building: default.size.stdout
+ 
+Finished building: balance_bot.list
+ 
+00:36:04 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "balance_bot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tynix\Development\stm32_workspace\balance_bot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="balance_bot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: balance_bot.elf
+ 
+arm-none-eabi-size  balance_bot.elf 
+arm-none-eabi-objdump -h -S balance_bot.elf  > "balance_bot.list"
+   text	   data	    bss	    dec	    hex	filename
+   6056	      4	   1572	   7632	   1dd0	balance_bot.elf
+Finished building: default.size.stdout
+ 
+Finished building: balance_bot.list
+ 
+00:38:00 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "balance_bot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tynix\Development\stm32_workspace\balance_bot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="balance_bot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: balance_bot.elf
+ 
+arm-none-eabi-size  balance_bot.elf 
+arm-none-eabi-objdump -h -S balance_bot.elf  > "balance_bot.list"
+   text	   data	    bss	    dec	    hex	filename
+   6056	      4	   1572	   7632	   1dd0	balance_bot.elf
+Finished building: default.size.stdout
+ 
+Finished building: balance_bot.list
+ 
+00:39:12 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "balance_bot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tynix\Development\stm32_workspace\balance_bot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="balance_bot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: balance_bot.elf
+ 
+arm-none-eabi-size  balance_bot.elf 
+arm-none-eabi-objdump -h -S balance_bot.elf  > "balance_bot.list"
+   text	   data	    bss	    dec	    hex	filename
+   6048	      4	   1572	   7624	   1dc8	balance_bot.elf
+Finished building: default.size.stdout
+ 
+Finished building: balance_bot.list
+ 
+00:40:25 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "balance_bot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tynix\Development\stm32_workspace\balance_bot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="balance_bot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: balance_bot.elf
+ 
+arm-none-eabi-size  balance_bot.elf 
+arm-none-eabi-objdump -h -S balance_bot.elf  > "balance_bot.list"
+   text	   data	    bss	    dec	    hex	filename
+   6048	      4	   1572	   7624	   1dc8	balance_bot.elf
+Finished building: default.size.stdout
+ 
+Finished building: balance_bot.list
+ 
+00:43:09 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "balance_bot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tynix\Development\stm32_workspace\balance_bot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="balance_bot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: balance_bot.elf
+ 
+arm-none-eabi-size  balance_bot.elf 
+arm-none-eabi-objdump -h -S balance_bot.elf  > "balance_bot.list"
+   text	   data	    bss	    dec	    hex	filename
+   6048	      4	   1572	   7624	   1dc8	balance_bot.elf
+Finished building: default.size.stdout
+ 
+Finished building: balance_bot.list
+ 
+00:44:46 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "balance_bot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tynix\Development\stm32_workspace\balance_bot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="balance_bot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: balance_bot.elf
+ 
+arm-none-eabi-size  balance_bot.elf 
+arm-none-eabi-objdump -h -S balance_bot.elf  > "balance_bot.list"
+   text	   data	    bss	    dec	    hex	filename
+   6056	      4	   1572	   7632	   1dd0	balance_bot.elf
+Finished building: default.size.stdout
+ 
+Finished building: balance_bot.list
+ 
+00:45:45 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "balance_bot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tynix\Development\stm32_workspace\balance_bot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="balance_bot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: balance_bot.elf
+ 
+arm-none-eabi-size  balance_bot.elf 
+arm-none-eabi-objdump -h -S balance_bot.elf  > "balance_bot.list"
+   text	   data	    bss	    dec	    hex	filename
+   6056	      4	   1572	   7632	   1dd0	balance_bot.elf
+Finished building: default.size.stdout
+ 
+Finished building: balance_bot.list
+ 
+00:46:33 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:129:26: warning: 'multiplier' may be used uninitialized [-Wmaybe-uninitialized]
+  129 |           controller_out *= multiplier;
+      |           ~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+../Core/Src/main.c:87:15: note: 'multiplier' was declared here
+   87 |         float multiplier;
+      |               ^~~~~~~~~~
+arm-none-eabi-gcc -o "balance_bot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tynix\Development\stm32_workspace\balance_bot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="balance_bot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: balance_bot.elf
+ 
+arm-none-eabi-size  balance_bot.elf 
+arm-none-eabi-objdump -h -S balance_bot.elf  > "balance_bot.list"
+   text	   data	    bss	    dec	    hex	filename
+   5936	      4	   1572	   7512	   1d58	balance_bot.elf
+Finished building: default.size.stdout
+ 
+Finished building: balance_bot.list
+ 
+00:47:26 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:129:26: warning: 'multiplier' may be used uninitialized [-Wmaybe-uninitialized]
+  129 |           controller_out *= multiplier;
+      |           ~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+../Core/Src/main.c:87:15: note: 'multiplier' was declared here
+   87 |         float multiplier;
+      |               ^~~~~~~~~~
+arm-none-eabi-gcc -o "balance_bot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tynix\Development\stm32_workspace\balance_bot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="balance_bot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: balance_bot.elf
+ 
+arm-none-eabi-size  balance_bot.elf 
+arm-none-eabi-objdump -h -S balance_bot.elf  > "balance_bot.list"
+   text	   data	    bss	    dec	    hex	filename
+   5936	      4	   1572	   7512	   1d58	balance_bot.elf
+Finished building: default.size.stdout
+ 
+Finished building: balance_bot.list
+ 
+00:48:38 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:87:15: warning: unused variable 'multiplier' [-Wunused-variable]
+   87 |         float multiplier;
+      |               ^~~~~~~~~~
+arm-none-eabi-gcc -o "balance_bot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tynix\Development\stm32_workspace\balance_bot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="balance_bot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: balance_bot.elf
+ 
+arm-none-eabi-size  balance_bot.elf 
+arm-none-eabi-objdump -h -S balance_bot.elf  > "balance_bot.list"
+   text	   data	    bss	    dec	    hex	filename
+   5920	      4	   1572	   7496	   1d48	balance_bot.elf
+Finished building: default.size.stdout
+ 
+Finished building: balance_bot.list
+ 
+00:49:31 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:87:15: warning: unused variable 'multiplier' [-Wunused-variable]
+   87 |         float multiplier;
+      |               ^~~~~~~~~~
+arm-none-eabi-gcc -o "balance_bot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tynix\Development\stm32_workspace\balance_bot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="balance_bot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: balance_bot.elf
+ 
+arm-none-eabi-size  balance_bot.elf 
+arm-none-eabi-objdump -h -S balance_bot.elf  > "balance_bot.list"
+   text	   data	    bss	    dec	    hex	filename
+   5924	      4	   1572	   7500	   1d4c	balance_bot.elf
+Finished building: default.size.stdout
+ 
+Finished building: balance_bot.list
+ 
+00:50:30 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:87:15: warning: unused variable 'multiplier' [-Wunused-variable]
+   87 |         float multiplier;
+      |               ^~~~~~~~~~
+arm-none-eabi-gcc -o "balance_bot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tynix\Development\stm32_workspace\balance_bot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="balance_bot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: balance_bot.elf
+ 
+arm-none-eabi-size  balance_bot.elf 
+arm-none-eabi-objdump -h -S balance_bot.elf  > "balance_bot.list"
+   text	   data	    bss	    dec	    hex	filename
+   5920	      4	   1572	   7496	   1d48	balance_bot.elf
+Finished building: default.size.stdout
+ 
+Finished building: balance_bot.list
+ 
+00:51:12 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:87:15: warning: unused variable 'multiplier' [-Wunused-variable]
+   87 |         float multiplier;
+      |               ^~~~~~~~~~
+arm-none-eabi-gcc -o "balance_bot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tynix\Development\stm32_workspace\balance_bot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="balance_bot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: balance_bot.elf
+ 
+arm-none-eabi-size  balance_bot.elf 
+arm-none-eabi-objdump -h -S balance_bot.elf  > "balance_bot.list"
+   text	   data	    bss	    dec	    hex	filename
+   5920	      4	   1572	   7496	   1d48	balance_bot.elf
+Finished building: default.size.stdout
+ 
+Finished building: balance_bot.list
+ 
+00:53:28 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:87:15: warning: unused variable 'multiplier' [-Wunused-variable]
+   87 |         float multiplier;
+      |               ^~~~~~~~~~
+arm-none-eabi-gcc -o "balance_bot.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tynix\Development\stm32_workspace\balance_bot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="balance_bot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: balance_bot.elf
+ 
+arm-none-eabi-size  balance_bot.elf 
+arm-none-eabi-objdump -h -S balance_bot.elf  > "balance_bot.list"
+   text	   data	    bss	    dec	    hex	filename
+   5920	      4	   1572	   7496	   1d48	balance_bot.elf
+Finished building: default.size.stdout
+ 
+Finished building: balance_bot.list
+ 

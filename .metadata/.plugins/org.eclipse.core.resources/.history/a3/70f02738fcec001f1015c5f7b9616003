@@ -132,7 +132,9 @@ int main(void)
 
 	  // map function: output = output_start + ((output_end - output_start) / (input_end - input_start)) * (input - input_start)
 	  // input: [0, 10]
-	  // left motor spins at lower PWM than right motor
+	  // output: [900, 2000]
+	  // motors probably won't ever need to run at full speed
+	  // motors begin to spin at about 900
 	  uint16_t leftmotor_max_pwm = 2047;
 	  uint16_t leftmotor_min_pwm = 750;
 	  uint16_t rightmotor_max_pwm = 2047;

@@ -82,8 +82,9 @@ int main(void)
 	while (!imu_config());
 
 
-	const float kp = 1.6;
-	const float kd = 0.5;
+	const float kp = 1.23;
+	const float kd = 0;
+	float multiplier;
 
 	const float max_error = 30;
 	const float max_controller_out = 10;
@@ -118,8 +119,14 @@ int main(void)
 		  enable_rightmotor();
 	  }
 
+//	  if (fabs(pitch_err) > 5.0) {
+//
+//		  multiplier = 1.0 + 0.2 * (fabs(pitch_err) - 5.0);
+//	  }
+
 
 	  float controller_out = kp * pitch_err + kd * (pitch_err - last_err);
+	  controller_out *= multiplier;
 
 	  // use absolute value of controller to select pwm duty value
 	  // direction of motors is determined by sign of controller_out
@@ -132,7 +139,9 @@ int main(void)
 
 	  // map function: output = output_start + ((output_end - output_start) / (input_end - input_start)) * (input - input_start)
 	  // input: [0, 10]
-	  // left motor spins at lower PWM than right motor
+	  // output: [900, 2000]
+	  // motors probably won't ever need to run at full speed
+	  // motors begin to spin at about 900
 	  uint16_t leftmotor_max_pwm = 2047;
 	  uint16_t leftmotor_min_pwm = 750;
 	  uint16_t rightmotor_max_pwm = 2047;
