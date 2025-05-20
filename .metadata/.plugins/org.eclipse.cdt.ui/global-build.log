@@ -3138,3 +3138,118 @@ Finished building: default.size.stdout
  
 Finished building: balance_bot.list
  
+01:03:31 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I"C:/Users/tynix/Development/stm32_workspace/uart1/Inc" -I"C:/Users/tynix/Development/stm32_workspace/i2c1/Inc" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:102:26: warning: implicit declaration of function 'constrain' [-Wimplicit-function-declaration]
+  102 |           target_pitch = constrain(target_pitch, max_target_pitch, min_target_pitch);
+      |                          ^~~~~~~~~
+../Core/Src/main.c:83:15: warning: unused variable 'pos_integral' [-Wunused-variable]
+   83 |         float pos_integral = 0;
+      |               ^~~~~~~~~~~~
+../Core/Src/main.c:82:21: warning: unused variable 'pitch_setpoint' [-Wunused-variable]
+   82 |         const float pitch_setpoint = 0;
+      |                     ^~~~~~~~~~~~~~
+../Core/Src/main.c:67:21: warning: unused variable 'spike_threshold' [-Wunused-variable]
+   67 |         const float spike_threshold = 8;
+      |                     ^~~~~~~~~~~~~~~
+../Core/Src/main.c:66:21: warning: unused variable 'angle_thresh' [-Wunused-variable]
+   66 |         const float angle_thresh = 6;
+      |                     ^~~~~~~~~~~~
+../Core/Src/main.c: In function 'imu_calibrate':
+../Core/Src/main.c:447:33: error: 'roll_raw' undeclared (first use in this function)
+  447 |                 imu_read_euler(&roll_raw, &pitch_raw, &heading_raw);
+      |                                 ^~~~~~~~
+../Core/Src/main.c:447:33: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:447:44: error: 'pitch_raw' undeclared (first use in this function)
+  447 |                 imu_read_euler(&roll_raw, &pitch_raw, &heading_raw);
+      |                                            ^~~~~~~~~
+../Core/Src/main.c:447:56: error: 'heading_raw' undeclared (first use in this function)
+  447 |                 imu_read_euler(&roll_raw, &pitch_raw, &heading_raw);
+      |                                                        ^~~~~~~~~~~
+../Core/Src/main.c:448:66: error: 'roll' undeclared (first use in this function)
+  448 |                 convert_euler(roll_raw, pitch_raw, heading_raw, &roll, &pitch, &heading);
+      |                                                                  ^~~~
+../Core/Src/main.c:448:73: error: 'pitch' undeclared (first use in this function)
+  448 |                 convert_euler(roll_raw, pitch_raw, heading_raw, &roll, &pitch, &heading);
+      |                                                                         ^~~~~
+../Core/Src/main.c:448:81: error: 'heading' undeclared (first use in this function)
+  448 |                 convert_euler(roll_raw, pitch_raw, heading_raw, &roll, &pitch, &heading);
+      |                                                                                 ^~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+01:05:22 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I"C:/Users/tynix/Development/stm32_workspace/uart1/Inc" -I"C:/Users/tynix/Development/stm32_workspace/i2c1/Inc" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:69:21: warning: unused variable 'spike_threshold' [-Wunused-variable]
+   69 |         const float spike_threshold = 8;
+      |                     ^~~~~~~~~~~~~~~
+../Core/Src/main.c:68:21: warning: unused variable 'angle_thresh' [-Wunused-variable]
+   68 |         const float angle_thresh = 6;
+      |                     ^~~~~~~~~~~~
+../Core/Src/main.c: In function 'imu_calibrate':
+../Core/Src/main.c:449:33: error: 'roll_raw' undeclared (first use in this function)
+  449 |                 imu_read_euler(&roll_raw, &pitch_raw, &heading_raw);
+      |                                 ^~~~~~~~
+../Core/Src/main.c:449:33: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:449:44: error: 'pitch_raw' undeclared (first use in this function)
+  449 |                 imu_read_euler(&roll_raw, &pitch_raw, &heading_raw);
+      |                                            ^~~~~~~~~
+../Core/Src/main.c:449:56: error: 'heading_raw' undeclared (first use in this function)
+  449 |                 imu_read_euler(&roll_raw, &pitch_raw, &heading_raw);
+      |                                                        ^~~~~~~~~~~
+../Core/Src/main.c:450:66: error: 'roll' undeclared (first use in this function)
+  450 |                 convert_euler(roll_raw, pitch_raw, heading_raw, &roll, &pitch, &heading);
+      |                                                                  ^~~~
+../Core/Src/main.c:450:73: error: 'pitch' undeclared (first use in this function)
+  450 |                 convert_euler(roll_raw, pitch_raw, heading_raw, &roll, &pitch, &heading);
+      |                                                                         ^~~~~
+../Core/Src/main.c:450:81: error: 'heading' undeclared (first use in this function)
+  450 |                 convert_euler(roll_raw, pitch_raw, heading_raw, &roll, &pitch, &heading);
+      |                                                                                 ^~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+01:06:33 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I"C:/Users/tynix/Development/stm32_workspace/uart1/Inc" -I"C:/Users/tynix/Development/stm32_workspace/i2c1/Inc" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "balance_bot.elf" @"objects.list"  -li2c1 -luart1 -mcpu=cortex-m4 -T"C:\Users\tynix\Development\stm32_workspace\balance_bot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="balance_bot.map" -Wl,--gc-sections -static -L"C:\Users\tynix\Development\stm32_workspace\i2c1\Debug" -L"C:\Users\tynix\Development\stm32_workspace\uart1\Debug" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: balance_bot.elf
+ 
+arm-none-eabi-size  balance_bot.elf 
+arm-none-eabi-objdump -h -S balance_bot.elf  > "balance_bot.list"
+   text	   data	    bss	    dec	    hex	filename
+   6372	      4	   1572	   7948	   1f0c	balance_bot.elf
+Finished building: default.size.stdout
+ 
+Finished building: balance_bot.list
+ 
+01:15:47 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I"C:/Users/tynix/Development/stm32_workspace/uart1/Inc" -I"C:/Users/tynix/Development/stm32_workspace/i2c1/Inc" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "balance_bot.elf" @"objects.list"  -li2c1 -luart1 -mcpu=cortex-m4 -T"C:\Users\tynix\Development\stm32_workspace\balance_bot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="balance_bot.map" -Wl,--gc-sections -static -L"C:\Users\tynix\Development\stm32_workspace\i2c1\Debug" -L"C:\Users\tynix\Development\stm32_workspace\uart1\Debug" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: balance_bot.elf
+ 
+arm-none-eabi-size  balance_bot.elf 
+arm-none-eabi-objdump -h -S balance_bot.elf  > "balance_bot.list"
+   text	   data	    bss	    dec	    hex	filename
+   6460	      4	   1572	   8036	   1f64	balance_bot.elf
+Finished building: default.size.stdout
+ 
+Finished building: balance_bot.list
+ 
+01:20:45 **** Incremental Build of configuration Debug for project balance_bot ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I"C:/Users/tynix/Development/stm32_workspace/uart1/Inc" -I"C:/Users/tynix/Development/stm32_workspace/i2c1/Inc" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "balance_bot.elf" @"objects.list"  -li2c1 -luart1 -mcpu=cortex-m4 -T"C:\Users\tynix\Development\stm32_workspace\balance_bot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="balance_bot.map" -Wl,--gc-sections -static -L"C:\Users\tynix\Development\stm32_workspace\i2c1\Debug" -L"C:\Users\tynix\Development\stm32_workspace\uart1\Debug" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: balance_bot.elf
+ 
+arm-none-eabi-size  balance_bot.elf 
+arm-none-eabi-objdump -h -S balance_bot.elf  > "balance_bot.list"
+   text	   data	    bss	    dec	    hex	filename
+   6448	      4	   1572	   8024	   1f58	balance_bot.elf
+Finished building: default.size.stdout
+ 
+Finished building: balance_bot.list
+ 
