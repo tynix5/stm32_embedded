@@ -66,6 +66,10 @@ void uart1_writeint(int num) {
 
 	if (num < 0)
 		uart1_writebyte('-');
+	else if (num == 0) {
+		uart1_writebyte('0');
+		return;
+	}
 
 	num = abs(num);
 	int power = floor(log10(num));		// calculate power of 10
