@@ -1,6 +1,0 @@
-23:25:30 **** Build of configuration Debug for project i2c1 ****
-make -j20 all 
-make: Nothing to be done for 'all'.
-
-23:25:30 Build Finished. 0 errors, 0 warnings. (took 143ms)
-
