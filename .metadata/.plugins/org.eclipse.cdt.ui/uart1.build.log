@@ -1,10 +1,6 @@
-16:08:19 **** Incremental Build of configuration Debug for project uart1 ****
+23:25:30 **** Build of configuration Debug for project uart1 ****
 make -j20 all 
-arm-none-eabi-gcc "../Src/uart1.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/uart1.d" -MT"Src/uart1.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/uart1.o"
-arm-none-eabi-ar -r  "libuart1.a" @"objects.list"  
-arm-none-eabi-ar: creating libuart1.a
-Finished building target: libuart1.a
- 
+make: Nothing to be done for 'all'.
 
-16:08:21 Build Finished. 0 errors, 0 warnings. (took 1s.250ms)
+23:25:31 Build Finished. 0 errors, 0 warnings. (took 142ms)
 

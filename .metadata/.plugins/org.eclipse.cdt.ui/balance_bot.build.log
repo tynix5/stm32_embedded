@@ -1,9 +1,9 @@
-14:49:14 **** Incremental Build of configuration Debug for project balance_bot ****
+23:25:27 **** Build of configuration Debug for project balance_bot ****
 make -j20 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I"C:/Users/tynix/Development/stm32_workspace/uart1/Inc" -I"C:/Users/tynix/Development/stm32_workspace/i2c1/Inc" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 ../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:81:21: warning: unused variable 'min_target_pitch' [-Wunused-variable]
-   81 |         const float min_target_pitch = -5;
+../Core/Src/main.c:77:21: warning: unused variable 'min_target_pitch' [-Wunused-variable]
+   77 |         const float min_target_pitch = -5;
       |                     ^~~~~~~~~~~~~~~~
 arm-none-eabi-gcc -o "balance_bot.elf" @"objects.list"  -li2c1 -luart1 -mcpu=cortex-m4 -T"C:\Users\tynix\Development\stm32_workspace\balance_bot\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="balance_bot.map" -Wl,--gc-sections -static -L"C:\Users\tynix\Development\stm32_workspace\i2c1\Debug" -L"C:\Users\tynix\Development\stm32_workspace\uart1\Debug" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: balance_bot.elf
@@ -17,5 +17,5 @@ Finished building: default.size.stdout
 Finished building: balance_bot.list
  
 
-14:49:15 Build Finished. 0 errors, 1 warnings. (took 486ms)
+23:25:30 Build Finished. 0 errors, 1 warnings. (took 3s.268ms)
 

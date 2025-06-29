@@ -1,10 +1,6 @@
-01:45:10 **** Incremental Build of configuration Debug for project i2c1 ****
+23:25:30 **** Build of configuration Debug for project i2c1 ****
 make -j20 all 
-arm-none-eabi-gcc "../Src/i2c1.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/i2c1.d" -MT"Src/i2c1.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/i2c1.o"
-arm-none-eabi-ar -r  "libi2c1.a" @"objects.list"  
-arm-none-eabi-ar: creating libi2c1.a
-Finished building target: libi2c1.a
- 
+make: Nothing to be done for 'all'.
 
-01:45:10 Build Finished. 0 errors, 0 warnings. (took 389ms)
+23:25:30 Build Finished. 0 errors, 0 warnings. (took 143ms)
 
